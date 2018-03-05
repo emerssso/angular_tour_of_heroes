@@ -30,6 +30,13 @@
             </list>
           </value>
         </entry>
+        <entry key="angular_router">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/angular_router-1.0.2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="angular_test">
           <value>
             <list>
@@ -513,6 +520,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/angular-4.0.0+2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/angular_compiler-0.3.0+1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/angular_forms-1.0.0/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/angular_router-1.0.2/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/angular_test-1.0.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/ansicolor-0.0.9/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/archive-1.0.33/lib" />
