@@ -15,6 +15,7 @@ import 'package:angular_router/angular_router.dart';
     </nav>
     <router-outlet></router-outlet>
   ''',
+    styleUrls: const ['app_component.css'],
     directives: const [ROUTER_DIRECTIVES],
     providers: const [HeroService]
 )
