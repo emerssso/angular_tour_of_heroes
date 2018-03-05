@@ -1,27 +1,20 @@
 import 'package:angular/angular.dart';
-import 'package:angular_forms/angular_forms.dart';
+
+import 'src/hero.dart';
+import 'src/hero_detail_component.dart';
+import 'src/mock_heroes.dart';
 
 @Component(
   selector: 'my-app',
-  directives: const [formDirectives],
-  template: '''
-    <h1>{{title}}</h1>
-    <h2>{{hero.name}} details!</h2>
-    <div><label>id: </label>{{hero.id}}</div>
-    <div>
-      <label>name: </label>
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </div>
-  ''',
+  directives: const [CORE_DIRECTIVES, HeroDetailComponent],
+  templateUrl: 'app_component.html',
+  styleUrls: const ['app_component.css'],
 )
 class AppComponent {
   final title = 'Tour of Heroes';
-  var hero = new Hero(1, 'Windstorm');
-}
+  List<Hero> heroes = mockHeroes;
 
-class Hero {
-  final int id;
-  String name;
+  Hero selectedHero;
 
-  Hero(this.id, this.name);
+  void onSelect(Hero hero) => selectedHero = hero;
 }
