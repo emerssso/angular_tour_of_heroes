@@ -1,5 +1,6 @@
 import 'package:angular/angular.dart';
 import 'package:angular_app/src/dashboard_component.dart';
+import 'package:angular_app/src/hero_detail_component.dart';
 import 'package:angular_app/src/hero_service.dart';
 import 'package:angular_app/src/heroes_component.dart';
 import 'package:angular_router/angular_router.dart';
@@ -18,6 +19,11 @@ import 'package:angular_router/angular_router.dart';
     providers: const [HeroService]
 )
 @RouteConfig(const [
+  const Route(
+      path: '/detail/:id',
+      name: 'HeroDetail',
+      component: HeroDetailComponent
+  ),
   const Route(
       path: '/heroes',
       name: 'Heroes',
